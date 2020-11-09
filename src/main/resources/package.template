@@ -1,0 +1,10 @@
+{
+  "name": "WebAutomation",
+  "label": "Web Automation",
+   "description" : "Provides commands for Browser Automation actions.",
+  "group": "",
+  "artifactName": "",
+  "packageVersion": "",
+  "codeVersion": "",
+  "commands": []
+}
