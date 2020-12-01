@@ -4,8 +4,8 @@
     "description": "Provides commands for Browser Automation actions.",
     "group": "com.automationanywhere",
     "artifactName": "WebAutomation",
-    "packageVersion": "1.0.12-20200902-142259",
-    "codeVersion": "1.0.12-20200902-142259",
+    "packageVersion": "1.0.12-20201201-171334",
+    "codeVersion": "1.0.12-20201201-171334",
     "commands": [
         {
             "name": "checkelement",
