@@ -1,6 +1,3 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ConfigureShadowRelocation
-
-
 buildscript {
 	repositories {
 		mavenCentral()
@@ -12,6 +9,7 @@ buildscript {
 			dirs 'libs'
 		}
 		dependencies {
+			classpath name: 'shadow', version: '6+'
 			classpath name:'command-plugin', version: '1+'
 			classpath "net.ltgt.gradle:gradle-apt-plugin:0.20"
 		}
@@ -19,7 +17,6 @@ buildscript {
 }
 
 plugins {
-	id 'com.github.johnrengelman.shadow' version '6.0.0'
 	id 'java'
 }
 
@@ -28,12 +25,13 @@ configure(allprojects){
 	apply plugin: 'com.github.johnrengelman.shadow'
 	apply plugin: "com.automationanywhere.command-codegen"
 	
+	
 	ext {
 		groupName = 'com.automationanywhere'
 		testNgVersion = '6.14.3'
-		loggerVersion = '2.10.0'
+		loggerVersion = '2.12.1'
 		jnaVersion = '5.3.1'	
-		version '1.0.12'
+		version '4.0.9'
 	}
 	group "$groupName"
 
@@ -59,6 +57,7 @@ configure(allprojects){
 	
 	compileJava {
 		options.annotationProcessorPath = configurations.apt
+		options.compilerArgs << '-parameters'
 		
 		dependsOn processResources
 
@@ -67,7 +66,10 @@ configure(allprojects){
 	packageJson{
 		artifactName = project.name
 		group = "$groupName"
+		author = "Stefan Karsten"
 	}
+	
+
 	
 	jar.dependsOn commandCodeGen
 	
@@ -83,13 +85,14 @@ configure(allprojects){
 		exclude 'META-INF/*.RSA'
 		rename '^OABWrapper.*\\.zip$', 'OABWrapper.zip'
 		relocate 'com.google.common', 'shadow.com.google.common'
+		//relocate 'io.netty','shadow.io.netty'
 	}
 
-	
 	dependencies {
-	
-		compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.0.0-alpha-6'
-		compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '4.0.0-alpha-6'
+		implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.0.0-beta-2'
+		implementation group: 'org.seleniumhq.selenium', name: 'selenium-edge-driver', version: '4.0.0-beta-2'
+		implementation group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '4.0.0-beta-2'
+		implementation group: 'org.jsoup', name: 'jsoup', version: '1.14.3'
 		
 		compileOnly name: 'command-annotations', version: '1+'
 		compileOnly name: 'bot-runtime', version: '1+'
@@ -101,9 +104,10 @@ configure(allprojects){
 		testImplementation "org.testng:testng:$testNgVersion"
 		testImplementation name: 'bot-runtime', version: '1+'
 		testImplementation name: 'bot-api', version: '1+'
-		implementation group: 'net.java.dev.jna', name: 'jna-platform', version: "$jnaVersion"		
+		implementation group: 'net.java.dev.jna', name: 'jna-platform', version: "$jnaVersion"
+		
+		
 	}
-	
 	
 }
 

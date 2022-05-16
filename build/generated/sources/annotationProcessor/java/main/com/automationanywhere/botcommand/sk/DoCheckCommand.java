@@ -13,9 +13,11 @@ import java.lang.Number;
 import java.lang.Object;
 import java.lang.String;
 import java.lang.Throwable;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -31,12 +33,12 @@ public final class DoCheckCommand implements BotCommand {
 
   public Optional<Value> execute(GlobalSessionContext globalSessionContext,
       Map<String, Value> parameters, Map<String, Object> sessionMap) {
-    logger.traceEntry(() -> parameters != null ? parameters.toString() : null, ()-> sessionMap != null ?sessionMap.toString() : null);
+    logger.traceEntry(() -> parameters != null ? parameters.entrySet().stream().filter(en -> !Arrays.asList( new String[] {}).contains(en.getKey()) && en.getValue() != null).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)).toString() : null, ()-> sessionMap != null ?sessionMap.toString() : null);
     DoCheck command = new DoCheck();
     HashMap<String, Object> convertedParameters = new HashMap<String, Object>();
     if(parameters.containsKey("sessionName") && parameters.get("sessionName") != null && parameters.get("sessionName").get() != null) {
       convertedParameters.put("sessionName", parameters.get("sessionName").get());
-      if(!(convertedParameters.get("sessionName") instanceof String)) {
+      if(convertedParameters.get("sessionName") !=null && !(convertedParameters.get("sessionName") instanceof String)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","sessionName", "String", parameters.get("sessionName").get().getClass().getSimpleName()));
       }
     }
@@ -46,7 +48,7 @@ public final class DoCheckCommand implements BotCommand {
 
     if(parameters.containsKey("jspath") && parameters.get("jspath") != null && parameters.get("jspath").get() != null) {
       convertedParameters.put("jspath", parameters.get("jspath").get());
-      if(!(convertedParameters.get("jspath") instanceof String)) {
+      if(convertedParameters.get("jspath") !=null && !(convertedParameters.get("jspath") instanceof String)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","jspath", "String", parameters.get("jspath").get().getClass().getSimpleName()));
       }
     }
@@ -56,7 +58,7 @@ public final class DoCheckCommand implements BotCommand {
 
     if(parameters.containsKey("check") && parameters.get("check") != null && parameters.get("check").get() != null) {
       convertedParameters.put("check", parameters.get("check").get());
-      if(!(convertedParameters.get("check") instanceof Boolean)) {
+      if(convertedParameters.get("check") !=null && !(convertedParameters.get("check") instanceof Boolean)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","check", "Boolean", parameters.get("check").get().getClass().getSimpleName()));
       }
     }
@@ -66,7 +68,7 @@ public final class DoCheckCommand implements BotCommand {
 
     if(parameters.containsKey("timeout") && parameters.get("timeout") != null && parameters.get("timeout").get() != null) {
       convertedParameters.put("timeout", parameters.get("timeout").get());
-      if(!(convertedParameters.get("timeout") instanceof Number)) {
+      if(convertedParameters.get("timeout") !=null && !(convertedParameters.get("timeout") instanceof Number)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","timeout", "Number", parameters.get("timeout").get().getClass().getSimpleName()));
       }
     }
@@ -76,7 +78,7 @@ public final class DoCheckCommand implements BotCommand {
 
     if(parameters.containsKey("attribute") && parameters.get("attribute") != null && parameters.get("attribute").get() != null) {
       convertedParameters.put("attribute", parameters.get("attribute").get());
-      if(!(convertedParameters.get("attribute") instanceof String)) {
+      if(convertedParameters.get("attribute") !=null && !(convertedParameters.get("attribute") instanceof String)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","attribute", "String", parameters.get("attribute").get().getClass().getSimpleName()));
       }
     }
@@ -100,5 +102,10 @@ public final class DoCheckCommand implements BotCommand {
       logger.fatal(e.getMessage(),e);
       throw new BotCommandException(MESSAGES_GENERIC.getString("generic.NotBotCommandException",e.getMessage()),e);
     }
+  }
+
+  public Map<String, Value> executeAndReturnMany(GlobalSessionContext globalSessionContext,
+      Map<String, Value> parameters, Map<String, Object> sessionMap) {
+    return null;
   }
 }

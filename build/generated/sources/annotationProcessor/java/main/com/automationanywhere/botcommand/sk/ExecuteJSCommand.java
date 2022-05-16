@@ -11,9 +11,11 @@ import java.lang.Deprecated;
 import java.lang.Object;
 import java.lang.String;
 import java.lang.Throwable;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,12 +31,12 @@ public final class ExecuteJSCommand implements BotCommand {
 
   public Optional<Value> execute(GlobalSessionContext globalSessionContext,
       Map<String, Value> parameters, Map<String, Object> sessionMap) {
-    logger.traceEntry(() -> parameters != null ? parameters.toString() : null, ()-> sessionMap != null ?sessionMap.toString() : null);
+    logger.traceEntry(() -> parameters != null ? parameters.entrySet().stream().filter(en -> !Arrays.asList( new String[] {}).contains(en.getKey()) && en.getValue() != null).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)).toString() : null, ()-> sessionMap != null ?sessionMap.toString() : null);
     ExecuteJS command = new ExecuteJS();
     HashMap<String, Object> convertedParameters = new HashMap<String, Object>();
     if(parameters.containsKey("sessionName") && parameters.get("sessionName") != null && parameters.get("sessionName").get() != null) {
       convertedParameters.put("sessionName", parameters.get("sessionName").get());
-      if(!(convertedParameters.get("sessionName") instanceof String)) {
+      if(convertedParameters.get("sessionName") !=null && !(convertedParameters.get("sessionName") instanceof String)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","sessionName", "String", parameters.get("sessionName").get().getClass().getSimpleName()));
       }
     }
@@ -44,7 +46,7 @@ public final class ExecuteJSCommand implements BotCommand {
 
     if(parameters.containsKey("js") && parameters.get("js") != null && parameters.get("js").get() != null) {
       convertedParameters.put("js", parameters.get("js").get());
-      if(!(convertedParameters.get("js") instanceof String)) {
+      if(convertedParameters.get("js") !=null && !(convertedParameters.get("js") instanceof String)) {
         throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","js", "String", parameters.get("js").get().getClass().getSimpleName()));
       }
     }
@@ -68,5 +70,10 @@ public final class ExecuteJSCommand implements BotCommand {
       logger.fatal(e.getMessage(),e);
       throw new BotCommandException(MESSAGES_GENERIC.getString("generic.NotBotCommandException",e.getMessage()),e);
     }
+  }
+
+  public Map<String, Value> executeAndReturnMany(GlobalSessionContext globalSessionContext,
+      Map<String, Value> parameters, Map<String, Object> sessionMap) {
+    return null;
   }
 }

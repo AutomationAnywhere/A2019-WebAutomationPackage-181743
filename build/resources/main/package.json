@@ -4,19 +4,28 @@
     "description": "Provides commands for Browser Automation actions.",
     "group": "com.automationanywhere",
     "artifactName": "WebAutomation",
-    "packageVersion": "1.0.12-20201201-171334",
-    "codeVersion": "1.0.12-20201201-171334",
+    "packageVersion": "4.0.9-20220516-163932",
+    "codeVersion": "4.0.9-20220516-163932",
+    "author": "Stefan Karsten",
     "commands": [
         {
             "name": "checkelement",
             "label": "Check",
             "description": "Check on an Element",
             "nodeLabel": "Check Element",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.DoCheckCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -88,11 +97,19 @@
             "label": "Click",
             "description": "Click on an Element",
             "nodeLabel": "Click Element",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.DoClickCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -154,11 +171,19 @@
             "label": "Focus",
             "description": "Focus on an Element",
             "nodeLabel": "Focus Element",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.DoFocusCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -220,11 +245,19 @@
             "label": "Select",
             "description": "Select an Element Option",
             "nodeLabel": "Select Element",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.DoSelectCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -296,11 +329,19 @@
             "label": "End session",
             "description": "End session",
             "nodeLabel": "End session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.EndSessionWebAutomationCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -323,6 +364,8 @@
             "label": "Execute JavaScript",
             "description": "Execute JavaScript",
             "nodeLabel": "Execute JavaScript",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.ExecuteJSCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -364,6 +407,8 @@
             "label": "Get Current Session",
             "description": "Get Current Session ID",
             "nodeLabel": "Get Current Session",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.GetCurrentSessionIDCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -395,6 +440,8 @@
             "label": "Get Current URL",
             "description": "Get Current URL",
             "nodeLabel": "Get Current URL",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.GetCurrentURLCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -426,6 +473,8 @@
             "label": "Get Page Source",
             "description": "Get Page Source of a Page",
             "nodeLabel": "Get Page Source",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.GetPageSourceCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -457,6 +506,8 @@
             "label": "Get Text",
             "description": "Get Textof an element",
             "nodeLabel": "Get Element Text",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.GetTextCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -527,6 +578,8 @@
             "label": "Get Value",
             "description": "Get Value of an element",
             "nodeLabel": "Get Element Value",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.GetValueCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -597,6 +650,8 @@
             "label": "Is Page Loaded",
             "description": "Is Page Loaded",
             "nodeLabel": "Is Page Loaded",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.isLoadedCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -628,11 +683,19 @@
             "label": "Open Page",
             "description": "Open Page",
             "nodeLabel": "OpenPage",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.OpenBrowserCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -665,11 +728,19 @@
             "label": "Set Value",
             "description": "Set Value of an element",
             "nodeLabel": "Set Element Value",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.SetValueCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -741,11 +812,19 @@
             "label": "Start session",
             "description": "Start new session",
             "nodeLabel": "start session {{sessionName}}|",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.StartSessionWebAutomationCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
             "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
             "attributes": [
                 {
                     "name": "sessionName",
@@ -797,6 +876,8 @@
             "label": "Wait Element Loaded",
             "description": "Wait until Element is loaded",
             "nodeLabel": "Wait Element Loaded",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.WaitLoadedElementCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
@@ -866,10 +947,2809 @@
             "label": "Wait Page Loaded",
             "description": "Wait until Page is loaded",
             "nodeLabel": "Wait Page Loaded",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
             "mainClass": "com.automationanywhere.botcommand.sk.WaitLoadedPageCommand",
             "icon": "pkg.svg",
             "textColor": "#777777",
             "backgroundColor": "#777777",
+            "comment": true,
+            "returnType": "BOOLEAN",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Status",
+            "returnRequired": false,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "10",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "clearinput",
+            "label": "Clear Input",
+            "description": "Clears Input for an Element",
+            "nodeLabel": "for {{search}} ",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.ClearInputCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "checkelement",
+            "label": "Check",
+            "description": "Check on an Element",
+            "nodeLabel": "on {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoCheckCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "check",
+                    "label": "Check",
+                    "type": "BOOLEAN",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "clickelement",
+            "label": "Click",
+            "description": "Click on an Element",
+            "nodeLabel": "on {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoClickCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "clicktype",
+                    "label": "Click Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "Click",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Click",
+                            "value": "Click"
+                        },
+                        {
+                            "label": "Right Click (No JS)",
+                            "value": "RightClick"
+                        },
+                        {
+                            "label": "Double Click (No JS)",
+                            "value": "DoubleClick"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "clicknhold",
+            "label": "Click and Hold",
+            "description": "Click and Hold an Element",
+            "nodeLabel": "element {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoClicknHoldCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "focuselement",
+            "label": "Focus",
+            "description": "Focus on an Element",
+            "nodeLabel": "on {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoFocusCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "release",
+            "label": "Release",
+            "description": "Release mouse button",
+            "nodeLabel": "on {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoReleaseCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "selectelement",
+            "label": "Select",
+            "description": "Select an Element Option",
+            "nodeLabel": "element {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoSelectCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "newvalue",
+                    "label": "Value",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "submitelement",
+            "label": "Submit",
+            "description": "Submit a Form",
+            "nodeLabel": "form {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DoSubmitCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "dragdrop",
+            "label": "Drag an Drop",
+            "description": "Drag and Drop an Element",
+            "nodeLabel": "element {{fromelement}} to {{toelement}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.DragandDropCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "fromelement",
+                    "label": "From Element",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "toelement",
+                    "label": "To Element",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EndSessionWebAutomation",
+            "label": "End session",
+            "description": "End session",
+            "nodeLabel": "{{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.EndSessionWebAutomationCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "closeBrowser",
+                    "label": "Close Browser",
+                    "type": "BOOLEAN",
+                    "defaultValue": {
+                        "boolean": true,
+                        "type": "BOOLEAN"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "executejs",
+            "label": "Execute JavaScript",
+            "description": "Execute JavaScript",
+            "nodeLabel": "script in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.ExecuteJSCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Value",
+            "returnRequired": false,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "js",
+                    "label": "JavaScript Code",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getvalueselement",
+            "label": "Get Values",
+            "description": "Get Values of an element list",
+            "nodeLabel": "in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetAllValuesCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "DICTIONARY",
+            "returnSubtype": "STRING",
+            "returnLabel": "Values",
+            "returnRequired": true,
+            "returnDescription": "key = <search>",
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "searchList",
+                    "label": "Searches",
+                    "description": "Should match the type",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getcurrentsession",
+            "label": "Get Current Session",
+            "description": "Get Current Session ID",
+            "nodeLabel": "id of {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetCurrentSessionIDCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Session ID",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getcurrenturl",
+            "label": "Get Current URL",
+            "description": "Get Current URL",
+            "nodeLabel": "in {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetCurrentURLCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "URL",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getcurrentwindow",
+            "label": "Get Current Window",
+            "description": "Get Current Window",
+            "nodeLabel": "of session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetCurrentWindowCommand",
+            "groupLabel": "Window",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Window Handle",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "elementdetails",
+            "label": "Element Details",
+            "description": "Get Element Details",
+            "nodeLabel": "of {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetDetailsCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "DICTIONARY",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Details",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "filename",
+                    "label": "Filename to store element screenshot as PNG image",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pagesource",
+            "label": "Get Page Source",
+            "description": "Get Page Source of a Page",
+            "nodeLabel": "in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetPageSourceCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "HTML",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "gettablecontent",
+            "label": "Get Table Content",
+            "description": "Get Table Content",
+            "nodeLabel": "of {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetTableCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Value",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "gettextelement",
+            "label": "Get Text",
+            "description": "Get Text of an element",
+            "nodeLabel": "of element {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetTextCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Value",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getvalueelement",
+            "label": "Get Value",
+            "description": "Get Value of an element",
+            "nodeLabel": "of element {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetValueCommand",
+            "groupLabel": "Get",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Value",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "getwindows",
+            "label": "Get Windows",
+            "description": "Get Windows",
+            "nodeLabel": "of session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.GetWindowsCommand",
+            "groupLabel": "Window",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "LIST",
+            "returnSubtype": "STRING",
+            "returnLabel": "Window Handles",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "isloaded",
+            "label": "Is Page Loaded",
+            "description": "Is Page Loaded",
+            "nodeLabel": "in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.isLoadedCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "BOOLEAN",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Status",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "movetoelement",
+            "label": "Move to",
+            "description": "Move to an Element",
+            "nodeLabel": "element {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.MoveToCommand",
+            "groupLabel": "Click",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "openpage",
+            "label": "Open Page",
+            "description": "Open Page",
+            "nodeLabel": "{{url}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.OpenBrowserCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "url",
+                    "label": "URL",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "selectframe",
+            "label": "Select Frame",
+            "description": "Select Frame",
+            "nodeLabel": "{{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.SelectFrameCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Frame Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "selectwindow",
+            "label": "Select Window",
+            "description": "Select Window",
+            "nodeLabel": "with handle {{handle}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.SelectWindowCommand",
+            "groupLabel": "Window",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "handle",
+                    "label": "Window Handle",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "sendkeys",
+            "label": "Send Key Strokes",
+            "description": "Send Keys to an Element",
+            "nodeLabel": " to {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.SendKeysCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        }
+                    ]
+                },
+                {
+                    "name": "inputtype",
+                    "label": "Keys",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "KEYS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        },
+                        {
+                            "name": "SELECT_MODES"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Keys",
+                            "value": "KEYS",
+                            "attributes": [
+                                {
+                                    "name": "keys",
+                                    "label": "Keys",
+                                    "type": "KEYPRESS",
+                                    "rules": [
+                                        {
+                                            "name": "NOT_EMPTY"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Credential",
+                            "value": "CREDENTIAL",
+                            "attributes": [
+                                {
+                                    "name": "keyscredential",
+                                    "label": "Credential",
+                                    "type": "CREDENTIAL",
+                                    "rules": [
+                                        {
+                                            "name": "NOT_EMPTY"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "setvalueselement",
+            "label": "Set Values",
+            "description": "Set Values of an element list",
+            "nodeLabel": "in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.SetAllValuesCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "searchList",
+                    "label": "Searches",
+                    "description": "Should match the type",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "newvalues",
+                    "label": "Values",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "setvalueelement",
+            "label": "Set Value",
+            "description": "Set Value of an element",
+            "nodeLabel": "of element {{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.SetValueCommand",
+            "groupLabel": "Set",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "newvalue",
+                    "label": "Value",
+                    "type": "CREDENTIAL",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "description": "No wait if 0",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "0",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "StartSessionWebAutomation",
+            "label": "Start Session",
+            "description": "Start New Session",
+            "nodeLabel": "{{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.StartSessionWebAutomationCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "browser",
+                    "label": "Browser",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "Chrome",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Chrome",
+                            "value": "Chrome"
+                        },
+                        {
+                            "label": "Edge",
+                            "value": "Edge"
+                        }
+                    ]
+                },
+                {
+                    "name": "width",
+                    "label": "Window Width",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "1920",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "height",
+                    "label": "Window Height",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "1080",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "headless",
+                    "label": "Headless",
+                    "type": "BOOLEAN",
+                    "defaultValue": {
+                        "boolean": false,
+                        "type": "BOOLEAN"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "driverpath",
+                    "label": "WebDriver path",
+                    "type": "FILE"
+                },
+                {
+                    "name": "profilepath",
+                    "label": "User Profile path",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "port",
+                    "label": "Existing Remote Session Port",
+                    "type": "NUMBER"
+                },
+                {
+                    "name": "library",
+                    "label": "Function Library",
+                    "type": "TEXTAREA"
+                }
+            ]
+        },
+        {
+            "name": "todefaultcontent",
+            "label": "To Default",
+            "description": "Reset to Default Content (if set to a frame before)",
+            "nodeLabel": "in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.ToDefaultCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returns": [
+                {
+                    "type": "UNDEFINED",
+                    "subtype": "ANY"
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "elementloaded",
+            "label": "Wait Element Loaded",
+            "description": "Wait until Element is loaded",
+            "nodeLabel": "{{search}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.WaitLoadedElementCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
+            "comment": true,
+            "returnType": "BOOLEAN",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Status",
+            "returnRequired": false,
+            "attributes": [
+                {
+                    "name": "sessionName",
+                    "label": "Session name",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "Default",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "search",
+                    "label": "Search",
+                    "description": "Should match the type",
+                    "type": "TEXTAREA",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "label": "Search Type",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "CSS",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Search by Element XPath",
+                            "value": "XPATH"
+                        },
+                        {
+                            "label": "Search by Element Id",
+                            "value": "ID"
+                        },
+                        {
+                            "label": "Search by Tag name",
+                            "value": "TAG"
+                        },
+                        {
+                            "label": "Search by CSS Selector",
+                            "value": "CSS"
+                        },
+                        {
+                            "label": "JavaScript",
+                            "value": "JS"
+                        }
+                    ]
+                },
+                {
+                    "name": "timeout",
+                    "label": "Timeout (Seconds)",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "10",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "attribute",
+                    "label": "Wait for Attribute Value",
+                    "type": "TEXT",
+                    "defaultValue": {
+                        "string": "className",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pageloaded",
+            "label": "Wait Page Loaded",
+            "description": "Wait until Page is loaded",
+            "nodeLabel": "in session {{sessionName}}",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.webautomation.WaitLoadedPageCommand",
+            "groupLabel": "Session",
+            "icon": "pkg.svg",
+            "textColor": "#2F4F4F",
+            "backgroundColor": "#2F4F4F",
             "comment": true,
             "returnType": "BOOLEAN",
             "returnSubtype": "UNDEFINED",
