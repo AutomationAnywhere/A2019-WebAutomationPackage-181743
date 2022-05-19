@@ -63,7 +63,7 @@ public class BrowserConnection {
 				options.setExperimentalOption("debuggerAddress","localhost:"+ port);
 
 			if (driverpath != null && !driverpath.isBlank() && new File(driverpath).exists()) {
-				System.setProperty("webdriver.chrome.driver", driverpath);
+				System.setProperty("webdriver.edge.driver", driverpath);
 				this.driver = new EdgeDriver(options);
 			} else
 				this.driver = WebDriverManager.edgedriver().capabilities(options).create();
