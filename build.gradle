@@ -105,6 +105,7 @@ configure(allprojects){
 		testImplementation name: 'bot-runtime', version: '1+'
 		testImplementation name: 'bot-api', version: '1+'
 		implementation group: 'net.java.dev.jna', name: 'jna-platform', version: "$jnaVersion"
+		implementation 'io.github.bonigarcia:webdrivermanager:5.1.1'
 		
 		
 	}
