@@ -1,5 +1,6 @@
 package com.automationanywhere.botcommand.utils;
 
+import com.automationanywhere.botcommand.exception.BotCommandException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -50,6 +51,8 @@ public class BrowserConnection {
 				this.driver = new ChromeDriver(options);
 			} else
 				this.driver = WebDriverManager.chromedriver().capabilities(options).create();
+			if(this.driver==null)
+				throw new BotCommandException("Unable to find installed application: chrome browser");
 		}
 
 
@@ -67,6 +70,8 @@ public class BrowserConnection {
 				this.driver = new EdgeDriver(options);
 			} else
 				this.driver = WebDriverManager.edgedriver().capabilities(options).create();
+			if(this.driver==null)
+				throw new BotCommandException("Unable to find installed application: edge browser");
 		}
 
 	}
