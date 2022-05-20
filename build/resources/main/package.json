@@ -4,8 +4,8 @@
     "description": "Provides commands for Browser Automation actions.",
     "group": "com.automationanywhere",
     "artifactName": "WebAutomation",
-    "packageVersion": "4.0.9-20220516-163932",
-    "codeVersion": "4.0.9-20220516-163932",
+    "packageVersion": "4.0.9-20220520-010744",
+    "codeVersion": "4.0.9-20220520-010744",
     "author": "Stefan Karsten",
     "commands": [
         {
